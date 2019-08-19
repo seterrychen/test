@@ -4,6 +4,7 @@ name: default
 steps:
 - name: hello
   image: python:3-alpine
+  network_mode: host
   commands:
     - pip3 install awscli
     - aws s3 ls s3://moxaics
