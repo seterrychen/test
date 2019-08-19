@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: hello
-  image: alpine
+  image: python:3-alpine
   commands:
-    - apk add awscli
+    - pip3 install aws-cli
     - aws s3 ls s3://moxaics
