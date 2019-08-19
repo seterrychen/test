@@ -5,4 +5,5 @@ steps:
 - name: hello
   image: alpine
   commands:
-    - sleep 60
+    - apk add awscli
+    - aws s3 ls s3://moxaics
