@@ -9,4 +9,4 @@ steps:
     - aws s3 ls s3://moxaics
 
 node:
-  instance: cpu
+  instance: runner
