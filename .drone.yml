@@ -7,3 +7,6 @@ steps:
   commands:
     - pip3 install awscli
     - aws s3 ls s3://moxaics
+
+node:
+  instance: cpu
