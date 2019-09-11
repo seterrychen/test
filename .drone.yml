@@ -16,6 +16,7 @@ steps:
   image: python:3-alpine
   commands:
     - echo "do something when deploy event"
+    - env
   when:
     event: promote
     environment: production
