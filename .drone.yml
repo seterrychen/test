@@ -7,11 +7,15 @@ steps:
   commands:
     - pip3 install awscli
     - aws s3 ls s3://moxaics
+  when:
+    event:
+      exclude:
+        - deployment
 
 - name: hello2
   image: python:3-alpine
   commands:
     - echo "do something when deploy event"
   when:
-    event:
-      - deployment
+    event: deployment
+    environment: production
