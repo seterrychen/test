@@ -10,12 +10,12 @@ steps:
   when:
     event:
       exclude:
-        - deployment
+        - promote
 
 - name: hello2
   image: python:3-alpine
   commands:
     - echo "do something when deploy event"
   when:
-    event: deployment
+    event: promote
     environment: production
