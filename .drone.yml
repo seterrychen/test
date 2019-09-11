@@ -8,5 +8,10 @@ steps:
     - pip3 install awscli
     - aws s3 ls s3://moxaics
 
-node:
-  instance: runner
+- name: hello
+  image: python:3-alpine
+  commands:
+    - echo "do something when deploy event"
+  when:
+    event:
+      - deployment
