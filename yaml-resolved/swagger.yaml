@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: CCC Simple Inventory API
+  title: Simple Inventory API
   description: This is a simple API cccc
   contact:
     email: you@your-company.com
