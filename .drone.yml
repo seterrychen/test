@@ -6,6 +6,7 @@ steps:
   image: python:3-alpine
   commands:
     - pip3 install awscli
+    - echo test
 
 node:
   instance: moxa-lab
