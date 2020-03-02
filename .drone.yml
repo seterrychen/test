@@ -15,3 +15,11 @@ steps:
   when:
     event:
     - promote
+
+- name: upload-to-stable
+  image: alpine
+  commands:
+  - env
+  when:
+    event:
+    - tag
