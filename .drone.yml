@@ -8,5 +8,10 @@ steps:
     - pip3 install awscli
     - echo test
 
-node:
-  instance: moxa-lab
+- name: upload-to-stable
+  image: alpine
+  commands:
+  - env
+  when:
+    event:
+    - promote
