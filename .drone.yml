@@ -15,7 +15,7 @@ steps:
     event:
     - promote
 
-- name: upload-to-stable
+- name: tag
   image: alpine
   commands:
   - env
