@@ -5,8 +5,7 @@ steps:
 - name: hello
   image: python:3-alpine
   commands:
-    - pip3 install awscli
-    - echo test
+    - apk add vim
 
 - name: upload-to-stable
   image: alpine
